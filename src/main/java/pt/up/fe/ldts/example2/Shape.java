@@ -2,8 +2,8 @@ package pt.up.fe.ldts.example2;
 
 public abstract class Shape {
 
-    private double x;
-    private double y;
+    protected double x;
+    protected double y;
 
     public Shape(double x, double y) {
         this.x = x;
@@ -14,13 +14,6 @@ public abstract class Shape {
     public abstract double getPerimeter();
     public abstract void draw(GraphicFramework graphics);
 
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
 
 
 }

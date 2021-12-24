@@ -23,9 +23,9 @@ public class Rectangle extends Shape {
 
     @Override
     public void draw(GraphicFramework graphics) {
-        graphics.drawLine(getX(), getY(), getX() + width, getY());
-        graphics.drawLine(getX() + width, getY(), getX() + width, getY() + height);
-        graphics.drawLine(getX() + width, getY() + height, getX(), getY() + height);
-        graphics.drawLine(getX(), getY() + height, getX(), getY());
+        graphics.drawLine(x, y, x + width, y);
+        graphics.drawLine(x + width, y, x + width, y + height);
+        graphics.drawLine(x + width, y + height, x, y + height);
+        graphics.drawLine(x, y + height, x, y);
     }
 }
