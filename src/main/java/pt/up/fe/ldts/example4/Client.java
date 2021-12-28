@@ -5,21 +5,11 @@ import java.util.Objects;
 public class Client extends Worker {
 
     public Client(String name, String phone) {
-        super(name, phone);
+        super(name, phone, null, null);
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || !(o instanceof Worker)) return false;
-        if (!(o instanceof Client)) return false;
-        Client worker = (Client) o;
-        return Objects.equals(getName(), worker.getName()) &&
-                Objects.equals(getPhone(), worker.getPhone());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName(), getPhone());
+    public boolean login(String username, String password) {
+        return false;
     }
 }
